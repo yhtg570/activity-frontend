@@ -7,7 +7,7 @@ export function useAuth() {
   const isAuthenticated = ref(false)
 
   // 配置 axios 基础 URL
-  axios.defaults.baseURL = 'http://123.60.167.227:8080'
+  axios.defaults.baseURL = '/api'
 
   const login = async (username, password) => {
     try {
